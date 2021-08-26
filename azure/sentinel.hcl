@@ -14,6 +14,7 @@ module "azure-functions" {
     source = "./azure-functions/azure-functions.sentinel"
 }
 
+/*
 policy "enforce-mandatory-tags" {
     source = "./enforce-mandatory-tags.sentinel"
     enforcement_level = "advisory"
@@ -52,7 +53,7 @@ policy "restrict-vm-image-id" {
 policy "restrict-vm-publisher" {
     source = "./restrict-vm-publisher.sentinel"
     enforcement_level = "advisory"
-}
+} */
 
 policy "restrict-vm-size" {
     source = "./restrict-vm-size.sentinel"
